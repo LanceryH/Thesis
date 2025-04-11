@@ -1,0 +1,11 @@
+/home/hugo/Documents/Hugo-Lancery-Thesis/Thesis/rupho/target/release/deps/libpy_literal-fe727b8bb656e187.rmeta: /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/lib.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/format.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/parse_macros.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/parse.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/grammar.pest
+
+/home/hugo/Documents/Hugo-Lancery-Thesis/Thesis/rupho/target/release/deps/libpy_literal-fe727b8bb656e187.rlib: /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/lib.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/format.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/parse_macros.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/parse.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/grammar.pest
+
+/home/hugo/Documents/Hugo-Lancery-Thesis/Thesis/rupho/target/release/deps/py_literal-fe727b8bb656e187.d: /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/lib.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/format.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/parse_macros.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/parse.rs /home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/grammar.pest
+
+/home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/lib.rs:
+/home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/format.rs:
+/home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/parse_macros.rs:
+/home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/parse.rs:
+/home/hugo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/py_literal-0.4.0/src/grammar.pest:
