@@ -1,5 +1,11 @@
-# Hugo-Lancery-Thesis
+# Photometry on the Moon
 Thesis on Lunar and planetary photometry in collaboration with GEOPS and LATMOS from Paris Saclay University
+
+<div align="center" style="background: #000">
+  <img width="200vh" src="https://github.com/user-attachments/assets/9a7dd3c6-18f8-40ab-96bd-fbdba6c2e985"/>
+  <img width="200vh" src="  https://github.com/user-attachments/assets/0781035f-ec58-4944-9164-55fa4804d164
+  "/>
+</div>
 
 ### [Internship](./Internship/README.md)
 
@@ -7,47 +13,19 @@ Thesis on Lunar and planetary photometry in collaboration with GEOPS and LATMOS 
 ## 📁 Project Structure
 
 ```text
-thesis-project/
+📁 Thesis
 │
-├── 📄 README.md                 # Project overview and how to use the repo
-├── 📄 LICENSE                   # Choose an appropriate license (e.g., MIT, GPL)
-├── 📄 .gitignore                # Ignore files like logs, temp files, etc.
+├── 📁 data/
+│   ├── 📁 raw/
+│   └── 📁 processed/
 │
-├── 📁 docs/                     # Documentation (progress reports, plans, etc.)
-│   ├── proposal.pdf
-│   ├── progress_report_01.md
-│   └── literature_review.md
-│
-├── 📁 thesis/                   # Main LaTeX or Markdown thesis source
-│   ├── main.tex
-│   ├── chapters/
-│   │   ├── intro.tex
-│   │   ├── related_work.tex
-│   │   └── conclusion.tex
-│   ├── figures/
-│   └── bibliography.bib
-│
-├── 📁 experiments/              # Jupyter notebooks, test scripts
-│   ├── notebook1.ipynb
-│   ├── experiment_utils.py
-│   └── results/
-│       └── exp1_results.csv
-│
-├── 📁 src/                      # Source code for models, simulations, analysis
-│   ├── __init__.py
-│   ├── data_loader.py
-│   ├── model.py
-│   └── train.py
-│
-├── 📁 data/                     # Raw and processed datasets (keep .gitignore here)
-│   ├── raw/
-│   └── processed/
-│
-├── 📁 tests/                    # Unit tests and testing scripts
-│   ├── test_model.py
-│   └── test_utils.py
-│
-├── 📁 scripts/                  # Utility scripts (e.g., for plotting, automation)
-│   └── plot_results.py
-│
-└── 📁 logs/                     # Logs from training/experiments (gitignored)
+└── 📁 scripts/
+    ├── 📁 astrodynamics/
+    ├── 📁 mapping/
+    │   └── 📁 mapping/
+    │       └── 📁 rover/
+    │           └── 📁 curiosity/
+    │
+    └── 📁 photometry/
+        └── 📁 rupho/
+```
