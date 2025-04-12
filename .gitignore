@@ -1,0 +1,7 @@
+# But not these directories
+docs/
+writing/
+
+# Also include files inside those directories
+docs/**
+writing/**
