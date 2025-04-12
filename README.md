@@ -11,9 +11,9 @@ Here is my thesis work on Lunar photometry
   <img height="100vh" src="https://github.com/user-attachments/assets/de6d59e9-84b4-46a0-a26f-4dcfc97b4bb0"/>
 </div>
 
-### [Internship](./Internship/README.md)
+### [Internship](INTERNSHIP.md)
 
-### [Subject](./Thesis/SUBJECT.md)
+### [Subject](SUBJECT.md)
 ## 📁 Project Structure
 
 ```text
