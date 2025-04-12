@@ -5,7 +5,7 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/LanceryH/thesis)](https://github.com/LanceryH/thesis/graphs/commit-activity)
 [![GitHub stars](https://img.shields.io/github/stars/LanceryH/thesis)](https://github.com/zauberzeug/LanceryH/thesis)
 
-Thesis on Lunar and planetary photometry in collaboration with GEOPS and LATMOS from Paris Saclay University
+Here is my thesis work on Lunar photometry
 
 <div align="center">
   <img height="100vh" src="https://github.com/user-attachments/assets/de6d59e9-84b4-46a0-a26f-4dcfc97b4bb0"/>
