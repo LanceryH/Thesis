@@ -11,12 +11,12 @@ Here is my thesis work on Lunar photometry, for any questions don't hesitate to 
 </div>
 
 ## How to build and use this repository
-### <ins>Local</ins> ⤵️
+### in Local
 1. Download [Docker engine](https://docs.docker.com/engine/install/)
 
 2. Download and open this repository in [Visual Studio Code](https://code.visualstudio.com/)
 
-### <ins>Codespace</ins> ⤵️
+### in Codespace
 1. Click on the button bellow
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?template_repository=LanceryH/thesis)
