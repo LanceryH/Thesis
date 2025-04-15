@@ -24,7 +24,7 @@ Here is my thesis work on Lunar photometry, for any questions don't hesitate to 
 2. Wait until the terminal show 
 
 ```console
-foo@bar:~$ Installation complete!
+(.venv) @Username ➜ /workspaces/Thesis (main) $ 
 ```
 
 ## Project context
