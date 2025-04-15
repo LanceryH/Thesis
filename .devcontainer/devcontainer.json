@@ -1,0 +1,17 @@
+{
+    "name": "Project Dev",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "features": {
+      "rust": "latest"
+    },
+    "postCreateCommand": "pip install -r requirements.txt",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "rust-lang.rust-analyzer"
+        ]
+      }
+    }
+  }
+  
