@@ -9,7 +9,8 @@
       "vscode": {
         "extensions": [
           "ms-python.python",
-          "rust-lang.rust-analyzer"
+          "rust-lang.rust-analyzer",
+          "ms-vscode-remote.remote-containers"
         ]
       }
     }
