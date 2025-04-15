@@ -4,7 +4,7 @@ import numpy as np
 # Generate synthetic data
 np.random.seed(42)  # For reproducibility
 run = int(1e1)
-n = (int(1e4),10)
+n = (int(1e4), 10)
 
 incidence = np.random.uniform(0, 90, size=n)  # Incidence angles in degrees
 emergence = np.random.uniform(0, 90, size=n)  # Emergence angles in degrees
