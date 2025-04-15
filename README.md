@@ -16,14 +16,14 @@ Here is my thesis work on Lunar photometry, for any questions don't hesitate to 
 
 2. Download and open this repository in [Visual Studio Code](https://code.visualstudio.com/)
 
-3. Ctrl+Shift+P Rebuild and Reopen container
+3. [Ctrl+Shift+P](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) Rebuild and Reopen container
 
 ### in Codespace
 1. Click on the button bellow
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?template_repository=LanceryH/thesis)
 
-2. Wait until the terminal show 
+2. Wait until the terminal shows the (.venv)
 
 ```console
 (.venv) @Username ➜ /workspaces/Thesis (main) $ 
