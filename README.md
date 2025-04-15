@@ -5,7 +5,10 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/LanceryH/thesis)](https://github.com/LanceryH/thesis/graphs/commit-activity)
 [![GitHub stars](https://img.shields.io/github/stars/LanceryH/thesis)](https://github.com/LanceryH/thesis/stargazers)
 
-Here is my thesis work on Lunar photometry
+Here is my thesis work on Lunar photometry, for any questions don't hesitate to contact me !
+
+mail!
+
 
 <div align="center">
   <img height="100vh" src="https://github.com/user-attachments/assets/de6d59e9-84b4-46a0-a26f-4dcfc97b4bb0"/>
