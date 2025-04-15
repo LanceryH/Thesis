@@ -4,15 +4,18 @@
     "features": {
       "rust": "latest"
     },
-    "postCreateCommand": "pip install -r requirements.txt",
+    "postCreateCommand": ". .venv/bin/activate && pip install -r requirements.txt",
     "customizations": {
       "vscode": {
         "extensions": [
           "ms-python.python",
           "rust-lang.rust-analyzer",
           "ms-vscode-remote.remote-containers"
-        ]
+        ],
+        "settings": {
+          "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
+        }
       }
-    }
+    },
+    "initializeCommand": "python -m venv .venv"
   }
-  
