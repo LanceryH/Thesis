@@ -8,6 +8,7 @@ Here is my thesis work on Lunar photometry, for any questions don't hesitate to 
 
 mail!
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?template_repository=LanceryH/thesis)
 
 <div align="center">
   <img height="100vh" src="https://github.com/user-attachments/assets/de6d59e9-84b4-46a0-a26f-4dcfc97b4bb0"/>
