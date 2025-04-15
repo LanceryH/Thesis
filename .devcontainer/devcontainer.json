@@ -4,7 +4,8 @@
   "features": {
     "rust": "latest"
   },
-  "postCreateCommand": "./setup.sh && source .venv/bin/activate",
+  "onCreateCommand": "python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt",
+  "postStartCommand": "source .venv/bin/activate && echo '🔥 Ready to go!'",
   "customizations": {
     "vscode": {
       "extensions": [
