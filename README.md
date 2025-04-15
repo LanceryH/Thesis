@@ -2,7 +2,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/LanceryH/thesis?color=orange)](https://github.com/LanceryH/thesis/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/LanceryH/thesis?color=blue)](https://github.com/LanceryH/thesis/issues)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/LanceryH/thesis)](https://github.com/LanceryH/thesis/graphs/commit-activity)
+https://img.shields.io/badge/just%20the%20message-8A2BE2
 [![GitHub stars](https://img.shields.io/github/stars/LanceryH/thesis)](https://github.com/LanceryH/thesis/stargazers)
 
 Here is my thesis work on Lunar photometry, for any questions don't hesitate to contact me !
