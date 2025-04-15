@@ -5,7 +5,7 @@
     "rust": "latest"
   },
   "onCreateCommand": "python -m venv .venv && .venv/bin/pip install -r requirements.txt",
-  "postStartCommand": "source .venv/bin/activate && echo '🔥 Ready to go!'",
+  "postStartCommand": "echo '🔥 Ready to go!'",
   "customizations": {
     "vscode": {
       "extensions": [
