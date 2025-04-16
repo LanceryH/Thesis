@@ -46,11 +46,6 @@ Here is my thesis work on Lunar photometry, for any questions don't hesitate to 
 │
 └── 📁 scripts/
     ├── 📁 astrodynamics/
-    ├── 📁 mapping/
-    │   └── 📁 mapping/
-    │       └── 📁 rover/
-    │           └── 📁 curiosity/
-    │
     └── 📁 photometry/
         └── 📁 rupho/
 ```
