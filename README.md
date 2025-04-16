@@ -16,7 +16,7 @@ Here is my thesis work on Lunar photometry, for any questions don't hesitate to 
 
 2. Download and open this repository in [Visual Studio Code](https://code.visualstudio.com/)
 
-3. [Ctrl+Shift+P](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) Rebuild and Reopen container
+3. [Ctrl+Shift+P](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) Rebuild and Reopen in a container
 
 ### in Codespace
 1. Click on the button bellow
