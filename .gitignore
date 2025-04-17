@@ -2,8 +2,3 @@
 docs/
 writing/
 .venv/
-
-# Also include files inside those directories
-docs/**
-writing/**
-.venv/**
