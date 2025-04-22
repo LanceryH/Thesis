@@ -7,8 +7,8 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = { version = "0.20", features = ["extension-module"] }
-numpy = "0.20"
-ndarray = "0.15"
-ndarray-npy = "0.8"
+pyo3 = { version = "0.24.2", features = ["extension-module"] }
+numpy = "0.24.0"
+ndarray = "0.16.1"
+ndarray-npy = "0.9.1"
 rayon = "1.5"

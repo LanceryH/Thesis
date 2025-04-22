@@ -1,0 +1,14 @@
+/home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/deps/libpyo3_build_config-f485114ab5741c4b.rmeta: /home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/lib.rs /home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/errors.rs /home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/impl_.rs /home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/build/pyo3-build-config-1d3b7719b940d569/out/pyo3-build-config-file.txt /home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/build/pyo3-build-config-1d3b7719b940d569/out/pyo3-build-config.txt
+
+/home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/deps/libpyo3_build_config-f485114ab5741c4b.rlib: /home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/lib.rs /home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/errors.rs /home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/impl_.rs /home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/build/pyo3-build-config-1d3b7719b940d569/out/pyo3-build-config-file.txt /home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/build/pyo3-build-config-1d3b7719b940d569/out/pyo3-build-config.txt
+
+/home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/deps/pyo3_build_config-f485114ab5741c4b.d: /home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/lib.rs /home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/errors.rs /home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/impl_.rs /home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/build/pyo3-build-config-1d3b7719b940d569/out/pyo3-build-config-file.txt /home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/build/pyo3-build-config-1d3b7719b940d569/out/pyo3-build-config.txt
+
+/home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/lib.rs:
+/home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/errors.rs:
+/home/tenet/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.24.2/src/impl_.rs:
+/home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/build/pyo3-build-config-1d3b7719b940d569/out/pyo3-build-config-file.txt:
+/home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/build/pyo3-build-config-1d3b7719b940d569/out/pyo3-build-config.txt:
+
+# env-dep:CARGO_PKG_VERSION=0.24.2
+# env-dep:OUT_DIR=/home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/build/pyo3-build-config-1d3b7719b940d569/out

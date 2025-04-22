@@ -4,7 +4,7 @@ use pyo3::wrap_pyfunction;
 use std::f64::consts::PI;
 use ndarray::Array2;
 use other::TrigExt;
-use numpy::{IntoPyArray, PyArray2};
+use numpy::{IntoPyArray, PyArray2, PyReadonlyArray2}; 
 
 /// Computes the exponential of the cotangent terms
 fn e1(dzeta: f64, x: f64) -> f64 {
@@ -107,26 +107,23 @@ fn fct_reflectance(w: f64, b: f64, c: f64, dzeta: f64, b0: f64, h: f64, incidenc
 }
 
 #[pyfunction]
-fn reflectance<'py>(
-    py: Python<'py>,
+fn reflectance(
+    py: Python<'_>,
     w: f64, b: f64, c: f64,
     z: f64, o: f64, h: f64,
-    incidence: &PyArray2<f64>, emergence: &PyArray2<f64>,
-    azimuth: &PyArray2<f64>, phase: &PyArray2<f64>
-) -> &'py PyArray2<f64> {
-    // Convert input PyArray2 to ndarray::Array2
-    let incidence = incidence.to_owned_array();
-    let emergence = emergence.to_owned_array();
-    let azimuth = azimuth.to_owned_array();
-    let phase = phase.to_owned_array();
+    incidence: PyReadonlyArray2<f64>,
+    emergence: PyReadonlyArray2<f64>,
+    azimuth: PyReadonlyArray2<f64>,
+    phase: PyReadonlyArray2<f64>
+) -> Py<PyArray2<f64>> {
+    let incidence = incidence.as_array();
+    let emergence = emergence.as_array();
+    let azimuth = azimuth.as_array();
+    let phase = phase.as_array();
 
-    // Get the dimensions of the input arrays (all should have the same shape)
     let (nrows, ncols) = incidence.dim();
-
-    // Create an empty 2D Array to store the results
     let mut results = Array2::<f64>::zeros((nrows, ncols));
 
-    // Iterate through each element and compute reflectance
     for i in 0..nrows {
         for j in 0..ncols {
             let incidence_value = incidence[[i, j]].to_radians();
@@ -134,7 +131,6 @@ fn reflectance<'py>(
             let azimuth_value = azimuth[[i, j]].to_radians();
             let phase_value = phase[[i, j]].to_radians();
 
-            // Compute reflectance for the current element
             results[[i, j]] = fct_reflectance(
                 w, b, c, z.to_radians(), o, h,
                 incidence_value, emergence_value, azimuth_value, phase_value
@@ -142,12 +138,11 @@ fn reflectance<'py>(
         }
     }
 
-    // Convert the result back to PyArray2 and return
-    results.into_pyarray(py)
+    results.into_pyarray(py).into()
 }
 
 #[pymodule]
-fn rupho(_py: Python, m: &PyModule) -> PyResult<()> {
+fn rupho(_py: Python, m: &Bound<PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(reflectance, m)?)?;
     Ok(())
 }
