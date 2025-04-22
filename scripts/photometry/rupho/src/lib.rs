@@ -2,9 +2,9 @@ mod other;
 use pyo3::prelude::*;
 use pyo3::wrap_pyfunction;
 use std::f64::consts::PI;
-use ndarray::Array2;
 use other::TrigExt;
-use numpy::{IntoPyArray, PyArray2, PyReadonlyArray2}; 
+use numpy::{IntoPyArray, PyArray1}; 
+use rayon::prelude::*;
 
 /// Computes the exponential of the cotangent terms
 fn e1(dzeta: f64, x: f64) -> f64 {
@@ -111,33 +111,29 @@ fn reflectance(
     py: Python<'_>,
     w: f64, b: f64, c: f64,
     z: f64, o: f64, h: f64,
-    incidence: PyReadonlyArray2<f64>,
-    emergence: PyReadonlyArray2<f64>,
-    azimuth: PyReadonlyArray2<f64>,
-    phase: PyReadonlyArray2<f64>
-) -> Py<PyArray2<f64>> {
-    let incidence = incidence.as_array();
-    let emergence = emergence.as_array();
-    let azimuth = azimuth.as_array();
-    let phase = phase.as_array();
+    incidence: Vec<f64>,
+    emergence: Vec<f64>,
+    azimuth: Vec<f64>,
+    phase: Vec<f64>) -> Py<PyArray1<f64>> {
 
-    let (nrows, ncols) = incidence.dim();
-    let mut results = Array2::<f64>::zeros((nrows, ncols));
+    let n = incidence.len();
+    let mut results = vec![0.0; n];
 
-    for i in 0..nrows {
-        for j in 0..ncols {
-            let incidence_value = incidence[[i, j]].to_radians();
-            let emergence_value = emergence[[i, j]].to_radians();
-            let azimuth_value = azimuth[[i, j]].to_radians();
-            let phase_value = phase[[i, j]].to_radians();
+    results.par_iter_mut().enumerate().for_each(|(i, res)| {
+        let incidence_rad = incidence[i].to_radians();
+        let emergence_rad = emergence[i].to_radians();
+        let azimuth_rad = azimuth[i].to_radians();
+        let phase_rad = phase[i].to_radians();
+        let z_rad = z.to_radians();
 
-            results[[i, j]] = fct_reflectance(
-                w, b, c, z.to_radians(), o, h,
-                incidence_value, emergence_value, azimuth_value, phase_value
-            );
-        }
-    }
+        *res = fct_reflectance(
+            w, b, c, z_rad, o, h,
+            incidence_rad, emergence_rad, azimuth_rad, phase_rad
+        );
+    });
 
+
+    // Return the results as a Python array
     results.into_pyarray(py).into()
 }
 
