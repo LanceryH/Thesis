@@ -5,7 +5,7 @@ import time
 
 # Generate synthetic data
 np.random.seed(42)  # For reproducibility
-n = int(1e5)
+n = int(1e6)
 
 incidence = np.random.uniform(1, 89, size=n)  # Incidence angles in degrees
 emergence = np.random.uniform(1, 89, size=n)  # Emergence angles in degrees
