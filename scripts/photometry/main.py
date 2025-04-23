@@ -1,6 +1,5 @@
 import rupho
 import numpy as np
-import functions as fn
 import time
 
 # Generate synthetic data
@@ -20,14 +19,4 @@ start_time = time.time()
 rust_result = rupho.reflectance(*micro_struct, *scene_geometry)
 rust_duration = time.time() - start_time
 print(f"Rust function execution time: {rust_duration:.4f} seconds")
-
-# Time the Python function
-start_time = time.time()
-python_result = fn.reflectance_photometry_HG2(
-    *micro_struct, incidence, emergence, azimuth)
-python_duration = time.time() - start_time
-print(f"Python function execution time: {python_duration:.4f} seconds")
-
-# Optionally print the results to verify correctness (this step can be omitted if just timing)
-# print(rust_result)
-# print(python_result)
+print(rust_result)
