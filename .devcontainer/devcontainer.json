@@ -4,7 +4,8 @@
   "features": {
     "rust": "latest"
   },
-  "onCreateCommand": "python -m venv .venv && .venv/bin/pip install -r requirements.txt",
+  "onCreateCommand": "python -m venv .venv && .venv/bin/pip install -r requirements.txt && curl https://sh.rustup.rs -sSf | sh -s -- -y --profile minimal",
+  "postStartCommand": ".venv/bin/maturin develop --release --manifest-path ./scripts/photometry/rupho/Cargo.toml",
   "customizations": {
     "vscode": {
       "extensions": [
