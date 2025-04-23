@@ -5,7 +5,7 @@ import time
 
 # Generate synthetic data
 np.random.seed(42)  # For reproducibility
-n = int(1e8)
+n = int(1e5)
 
 incidence = np.random.uniform(1, 89, size=n)  # Incidence angles in degrees
 emergence = np.random.uniform(1, 89, size=n)  # Emergence angles in degrees
@@ -23,7 +23,8 @@ print(f"Rust function execution time: {rust_duration:.4f} seconds")
 
 # Time the Python function
 start_time = time.time()
-python_result = fn.reflectance_photometry_HG2(*micro_struct, incidence, emergence, azimuth)
+python_result = fn.reflectance_photometry_HG2(
+    *micro_struct, incidence, emergence, azimuth)
 python_duration = time.time() - start_time
 print(f"Python function execution time: {python_duration:.4f} seconds")
 
