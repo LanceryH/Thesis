@@ -4,3 +4,4 @@ spiceypy
 maturin
 ipykernel
 numba
+qrcode
