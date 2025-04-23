@@ -13,7 +13,8 @@
         "ms-python.python",
         "rust-lang.rust-analyzer",
         "ms-vscode-remote.remote-containers",
-        "ms-toolsai.jupyter"
+        "ms-toolsai.jupyter",
+        "GitHub.vscode-pull-request-github"
       ],
       "settings": {
         "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
