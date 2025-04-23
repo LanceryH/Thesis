@@ -6,7 +6,7 @@
     "rust": "latest"
   },
   "onCreateCommand": "python -m venv .venv && .venv/bin/pip install -r requirements.txt && curl https://sh.rustup.rs -sSf | sh -s -- -y --profile minimal",
-  "postStartCommand": ".venv/bin/maturin develop --release --manifest-path ./scripts/photometry/rupho/Cargo.toml && clear && echo '\n💡 Run `gh auth login -w -p 'HTTPS'` to connect GitHub inside the container\n'",
+  "postStartCommand": ".venv/bin/maturin develop --release --manifest-path ./scripts/photometry/rupho/Cargo.toml && clear && echo '\nRun `git remote set-url origin https://github.com/LanceryH/Thesis.git && gh auth login -w -p 'HTTPS'` to connect GitHub inside the container\n'",
   "customizations": {
     "vscode": {
       "extensions": [
