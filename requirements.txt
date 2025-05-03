@@ -5,3 +5,4 @@ maturin
 ipykernel
 numba
 qrcode
+scipy
