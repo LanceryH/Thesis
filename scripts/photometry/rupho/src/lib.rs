@@ -6,7 +6,7 @@ use other::TrigExt;
 use numpy::{IntoPyArray, PyArray1}; 
 use rayon::prelude::*;
 
-/// Computes the exponential of the cotangent terms
+// Computes the exponential of the cotangent terms
 fn e1(dzeta: f64, x: f64) -> f64 {
     let cot_dzeta = dzeta.cotan();
     let cot_x = x.cotan();
@@ -19,7 +19,7 @@ fn e2(dzeta: f64, x: f64) -> f64 {
     (-1.0 / PI * cot_dzeta_sq * cot_x_sq).exp()
 }
 
-/// Computes the geometric correction factors for reflectance.
+// Computes the geometric correction factors for reflectance.
 fn geometry_correction(incidence: f64, emergence: f64, azimuth: f64, dzeta: f64) -> (f64, f64, f64, f64) {
     let tan_dzeta = dzeta.tan();
     let xidz = 1.0 / (1.0 + PI * tan_dzeta.powi(2)).sqrt();
@@ -51,7 +51,7 @@ fn geometry_correction(incidence: f64, emergence: f64, azimuth: f64, dzeta: f64)
     (muo, mu, muo_b, mu_b)
 }
 
-/// Computes the shadowing factor using Hapke's model.
+// Computes the shadowing factor using Hapke's model.
 fn shadowing(incidence: f64, emergence: f64, mu: f64, muo_b: f64, mu_b: f64, azimuth: f64, dzeta: f64) -> f64 {
     let f = if azimuth.abs() == PI {
         0.0
@@ -69,20 +69,20 @@ fn shadowing(incidence: f64, emergence: f64, mu: f64, muo_b: f64, mu_b: f64, azi
     mu * incidence.cos() * xidz / temp
 }
 
-/// Computes the phase function component of reflectance.
+// Computes the phase function component of reflectance.
 fn phase_compo(b: f64, c: f64, phase: f64) -> f64 {
     (1.0 - c) * (1.0 - b.powi(2)) / (1.0 + 2.0 * b * phase.cos() + b.powi(2)).powf(1.5)
         + c * (1.0 - b.powi(2)) / (1.0 - 2.0 * b * phase.cos() + b.powi(2)).powf(1.5)
 }
 
-/// Computes the Chandrasekhar function used in reflectance modeling.
+// Computes the Chandrasekhar function used in reflectance modeling.
 fn chandrasekhar(x: f64, gamma: f64) -> f64 {
     let denom = 1.0 - (1.0 - gamma.powi(2)) * x * ((1.0 - gamma) / (1.0 + gamma) + 
         (0.5 - x * (1.0 - gamma) / (1.0 + gamma)) * ((1.0 + x) / x).ln());
     1.0 / denom
 }
 
-/// Computes the reflectance function.
+// Computes the reflectance function.
 fn fct_reflectance(w: f64, b: f64, c: f64, dzeta: f64, b0: f64, h: f64, incidence: f64, emergence: f64, azimuth: f64, phase: f64) -> f64 {
     let mu = emergence.cos();
     let muo = incidence.cos();
