@@ -6,3 +6,5 @@ ipykernel
 numba
 qrcode
 scipy
+ipympl
+PyQt6
