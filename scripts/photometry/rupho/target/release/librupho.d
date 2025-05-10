@@ -1,1 +1,1 @@
-/home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/librupho.so: /home/tenet/Documents/thesis/scripts/photometry/rupho/src/lib.rs /home/tenet/Documents/thesis/scripts/photometry/rupho/src/math.rs /home/tenet/Documents/thesis/scripts/photometry/rupho/src/reflec.rs
+/home/tenet/Documents/thesis/scripts/photometry/rupho/target/release/librupho.so: /home/tenet/Documents/thesis/scripts/photometry/rupho/src/lib.rs /home/tenet/Documents/thesis/scripts/photometry/rupho/src/reflec.rs /home/tenet/Documents/thesis/scripts/photometry/rupho/src/trigo.rs

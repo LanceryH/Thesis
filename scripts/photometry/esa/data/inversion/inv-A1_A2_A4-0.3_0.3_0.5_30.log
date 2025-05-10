@@ -1,0 +1,102 @@
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  Multi-core Markov-chain Monte Carlo (mc3).
+  Version 3.2.1.
+  Copyright (c) 2015-2025 Patricio Cubillos and collaborators.
+  mc3 is open-source software under the MIT license (see LICENSE).
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Start MCMC chains  (Sat May 10 15:46:52 2025)
+
+[:         ]  10.0% completed  (Sat May 10 15:46:53 2025)
+Out-of-bound Trials:
+[   6   59  302  351 4460 4126]
+Best Parameters: (chisq=0.0344)
+[0.289888   0.29962861 0.50757852 0.66024653 0.49945429 0.75396143]
+
+[::        ]  20.0% completed  (Sat May 10 15:46:54 2025)
+Out-of-bound Trials:
+[   8  150  592  771 9018 8502]
+Best Parameters: (chisq=0.0344)
+[0.289888   0.29962861 0.50757852 0.66024653 0.49945429 0.75396143]
+
+[:::       ]  30.0% completed  (Sat May 10 15:46:54 2025)
+Out-of-bound Trials:
+[    8   190   786  1161 13596 12979]
+Best Parameters: (chisq=0.0344)
+[0.289888   0.29962861 0.50757852 0.66024653 0.49945429 0.75396143]
+
+[::::      ]  40.0% completed  (Sat May 10 15:46:55 2025)
+Out-of-bound Trials:
+[   13   245   995  1573 18159 17516]
+Best Parameters: (chisq=0.0318)
+[0.28425899 0.30863552 0.49366819 0.66923221 0.55653332 0.89343212]
+
+[:::::     ]  50.0% completed  (Sat May 10 15:46:55 2025)
+Out-of-bound Trials:
+[   18   405  1349  1923 22772 21907]
+Best Parameters: (chisq=0.0318)
+[0.28425899 0.30863552 0.49366819 0.66923221 0.55653332 0.89343212]
+
+[::::::    ]  60.0% completed  (Sat May 10 15:46:56 2025)
+Out-of-bound Trials:
+[   21   481  1691  2380 27420 26589]
+Best Parameters: (chisq=0.0310)
+[0.32558189 0.31005433 0.53065535 0.67791589 0.24891186 0.33398227]
+
+[:::::::   ]  70.0% completed  (Sat May 10 15:46:56 2025)
+Out-of-bound Trials:
+[   25   577  1926  2764 32082 30934]
+Best Parameters: (chisq=0.0310)
+[0.32558189 0.31005433 0.53065535 0.67791589 0.24891186 0.33398227]
+
+[::::::::  ]  80.0% completed  (Sat May 10 15:46:57 2025)
+Out-of-bound Trials:
+[   29   625  2121  3097 36598 35480]
+Best Parameters: (chisq=0.0310)
+[0.32558189 0.31005433 0.53065535 0.67791589 0.24891186 0.33398227]
+
+[::::::::: ]  90.0% completed  (Sat May 10 15:46:57 2025)
+Out-of-bound Trials:
+[   34   695  2273  3474 41114 39832]
+Best Parameters: (chisq=0.0310)
+[0.32558189 0.31005433 0.53065535 0.67791589 0.24891186 0.33398227]
+
+[::::::::::] 100.0% completed  (Sat May 10 15:46:58 2025)
+Out-of-bound Trials:
+[   39   799  2575  3797 45961 44356]
+Best Parameters: (chisq=0.0310)
+[0.32558189 0.31005433 0.53065535 0.67791589 0.24891186 0.33398227]
+
+MCMC Summary:
+-------------
+  Number of evaluated samples:        200000
+  Number of parallel chains:               5
+  Average iterations per chain:        40000
+  Burned-in iterations per chain:       2000
+  Thinning factor:                         1
+  MCMC sample size (thinned, burned): 190000
+  Acceptance rate:   16.97%
+
+Parameter name     best fit   median      1sigma_low   1sigma_hi        S/N
+--------------- -----------  -----------------------------------  ---------
+w                3.2558e-01   3.1125e-01 -4.4164e-02  5.0626e-02        6.8
+b                3.1005e-01   2.9043e-01 -6.3101e-02  5.0271e-02        5.1
+c                5.3066e-01   5.1950e-01 -1.1530e-01  1.2923e-01        4.1
+dzeta            6.7792e-01   6.8627e-01 -9.7224e-02  1.0408e-01        6.7
+B0               2.4891e-01   5.0713e-01 -3.3828e-01  3.3734e-01        0.9
+h                3.3398e-01   4.6191e-01 -3.1339e-01  3.5108e-01        1.2
+
+  Best-parameter's chi-squared:        0.0310
+  Best-parameter's -2*log(posterior):  0.0310
+  Bayesian Information Criterion:     16.2793
+  Reduced chi-squared:                 0.0034
+  Standard deviation of residuals:  0.000668265
+
+For a detailed summary with all parameter posterior statistics see
+/home/tenet/Documents/thesis/scripts/photometry/esa/data/inversion/inv-A1_A2_A4-0.3_0.3_0.5_30_statistics.txt
+
+Output sampler files:
+  /home/tenet/Documents/thesis/scripts/photometry/esa/data/inversion/inv-A1_A2_A4-0.3_0.3_0.5_30_statistics.txt
+  /home/tenet/Documents/thesis/scripts/photometry/esa/data/inversion/inv-A1_A2_A4-0.3_0.3_0.5_30.npz
+  /home/tenet/Documents/thesis/scripts/photometry/esa/data/inversion/inv-A1_A2_A4-0.3_0.3_0.5_30.log
