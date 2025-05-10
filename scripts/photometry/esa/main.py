@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import glob as gl
 
-folder_path = "/home/tenet/Documents/thesis/scripts/photometry/esa/data2"
+folder_path = "/home/tenet/Documents/thesis/scripts/photometry/esa/data"
 
 """
 observer_lat_range = (-180,180)
