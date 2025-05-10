@@ -2,4 +2,4 @@
 docs/
 writing/
 .venv/
-scripts/photometry/esa/data
+/scripts/photometry/esa/data
